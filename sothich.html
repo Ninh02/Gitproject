@@ -1,32 +1,80 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:backgroud-color="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:backgroud-color="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Sở thích </title>
+    <style>
+        form{width: 400px; }
+        fieldset{background-color: aqua;}
+        table{400px;background-color: white}
+        #hang1{background-color:orangered;text-align: center; }
+        #email{size: 20px}
+        .color{text-align: right;color: blue;}
+
+    </style>
 </head>
 <body>
-<table>
-    <form>
-        <h1>SỞ THÍCH CỦA BẠN</h1
-        <label>Họ và tên </label>
-        <input type="text " name="họ và tên "></br>
-        <label>Email </label>
-        <input type="text " name="email " ></br>
-        <label>sở thích </label></br>
-        <label><input type="checkbox" name="hobby " value="thể thao ">Thể thao  </label>
-        <label><input type="checkbox"name="hobby " value="lướt web ">Lướt web  </label>
-        <label><input type="checkbox" name="hobby " value="Du lịch ">Du lịch </label></br>
-        <label><input type="checkbox" name="hobby " value="âm nhạc ">Âm nhạc  </label>
-        <label><input type="checkbox" name="hobby " value="chơi game ">Chơi game </label>
-        <label><input type="checkbox" name="hobby " value="đọc sách  "> Đọc sách </label></br>
-        <label><input type="checkbox" name="hobby " value="điện ảnh "> Điện ảnh </label></br>
-        <label><input type="button " name="gửi thông tin " value="Gửi thông tin "> </label></br>
-        <label><input type="reset " name="nhập lại " value="Nhập lại  "> </label>
+<form>
+    <fieldset>
+        <table>
+            <tr>
+                <td colspan="4" id="hang1">SO THICH CUA BAN </td>
 
+            </tr>
+            <tr>
+                <td class="color">Ho va ten</td>
+                <td colspan="3">
+                    <input type="text" id="ho va ten">
+                </td>
+            </tr>
+            <tr>
+                <td class="color">Email </td>
+                <td colspan="3">
+                    <input type="text" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td class="color">So thich</td>
+                <td>
+                    <input type="checkbox" name="The thao" id="1">The Thao
+                </td>
+                <td>
+                    <input type="checkbox" name="am nhac" id="2">Am Nhac
+                </td>
+                <td>
+                    <input type="checkbox" name="doc sach" id="3">Doc Sach
+                </td>
 
-    </form>
-</table>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox" name="luot web" id="4">Luot web
+                </td>
+                <td>
+                    <input type="checkbox" name="choi game" id="5">Choi game
+                </td>
+                <td>
+                    <input type="checkbox" name="dien anh" id="6">Dien Anh
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox" name="du lich" id="7">Du lich
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <input type="submit" value="Gui thong tin" id="submit">
+                </td>
+                <td>
+                    <input type="reset" value="Nhap lai" id="reset">
+                </td>
+            </tr>
 
-
+        </table>
+    </fieldset>
+</form>
 </body>
 </html>
